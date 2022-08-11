@@ -5,11 +5,11 @@ import '../style/Product.css';
 import Navbar from '../components/Navbar';
 import Showcase from '../components/Showcase';
 import Btn from '../components/Btn';
+import Filter from '../components/Filter';
 
 //? data
 import shoes from '../static/shoes.json';
 
-//todo: add men, women and kid section label
 
 function Product() {
   const id = window.location.search
@@ -28,6 +28,13 @@ function Product() {
             <h1>{shoe.name}</h1>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pellentesque nisl. In sit amet fermentum arcu. Proin malesuada metus.</p>
+
+            <h3>Size Available:-</h3>
+            <div className='flex'>
+              {shoe.size.map(item => 
+                <Filter text={`${item} UK`} style={{opacity:1}} />
+                )}
+            </div>
 
             <h2>${shoe.price}</h2>
 
