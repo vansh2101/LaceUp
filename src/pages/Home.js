@@ -66,21 +66,21 @@ function Home() {
         <div className='bg'></div>
 
         <div>
-          <Showcase img={'./images/sneakers/sneaker.png'} bg='pink' scale='0.62' />
+          <Showcase img={'/images/sneakers/sneaker2.png'} bg='yellow' scale='0.62' />
 
           <h3>Nike AirMax Pro</h3>
           <h2>$80.99</h2>
         </div>
 
         <div>
-          <Showcase img={'./images/sneakers/sneaker.png'} bg='orange' scale='0.62' />
+          <Showcase img={'/images/sneakers/sneaker8.png'} bg='orange' scale='0.62' />
 
           <h3>Nike AirMax Pro</h3>
           <h2>$80.99</h2>
         </div>
 
         <div>
-          <Showcase img={'./images/sneakers/sneaker.png'} bg='gray' scale='0.62' />
+          <Showcase img={'/images/sneakers/sneaker5.png'} bg='gray' scale='0.62' />
 
           <h3>Nike AirMax Pro</h3>
           <h2>$80.99</h2>
