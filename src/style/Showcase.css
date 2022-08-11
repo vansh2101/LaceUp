@@ -1,0 +1,14 @@
+.showcase div{
+    background-color: #8dc53e;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.showcase img{
+    width: 140%;
+    position: absolute;
+    top: 0;
+    left: -15%;
+}

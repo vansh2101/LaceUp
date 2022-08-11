@@ -1,0 +1,92 @@
+[
+    {
+        "id": "0",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker.png",
+        "price": 80.99,
+        "category": "men",
+        "color": "white",
+        "brand": "adidas",
+        "size": [6,7,8,9]
+    },
+    {
+        "id": "1",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker2.png",
+        "price": 69.99,
+        "category": "women",
+        "color": "yellow",
+        "brand": "nike",
+        "size": [5,6,7,8]
+    },
+    {
+        "id": "2",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker2.png",
+        "price": 50.99,
+        "category": "kids",
+        "color": "yellow",
+        "brand": "nike",
+        "size": [5,6]
+    },
+    {
+        "id": "3",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker3.png",
+        "price": 61.59,
+        "category": "men",
+        "color": "brown",
+        "brand": "nike",
+        "size": [8]
+    },
+    {
+        "id": "4",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker5.png",
+        "price": 65.99,
+        "category": "women",
+        "color": "gray",
+        "brand": "puma",
+        "size": [6,7]
+    },
+    {
+        "id": "5",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker5.png",
+        "price": 70.99,
+        "category": "kids",
+        "color": "gray",
+        "brand": "puma",
+        "size": [5]
+    },
+    {
+        "id": "6",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker6.png",
+        "price": 85.99,
+        "category": "men",
+        "color": "blue",
+        "brand": "reebok",
+        "size": [9,10]
+    },
+    {
+        "id": "7",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker7.png",
+        "price": 99.99,
+        "category": "women",
+        "color": "blue",
+        "brand": "vans",
+        "size": [6,7]
+    },
+    {
+        "id": "8",
+        "name": "Nike AirMax Pro",
+        "img": "/images/sneakers/sneaker8.png",
+        "price": 52.99,
+        "category": "kids",
+        "color": "red",
+        "brand": "nike",
+        "size": [5,6]
+    } 
+]

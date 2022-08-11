@@ -1,0 +1,35 @@
+.card{
+    width: 28%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #8dc53e;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.card img{
+    width: 80%;
+}
+
+.card h2, .card h3{
+    color: black;
+    font-size: 1.5vw;
+}
+
+.card h3{
+    opacity: 0.8;
+    font-size: 1.6vw;
+    margin-top: 0;
+}
+
+.card .btn{
+    width: 52%;
+    margin: auto;
+    margin-bottom: 3%;
+    scale: 0.9;
+    z-index: 1;
+}
+.card .btn:hover{
+    scale: 1;
+}
