@@ -15,6 +15,7 @@ function Navbar() {
                     <Link to='/shop/men'>Men</Link>
                     <Link to='/shop/women'>Women</Link>
                     <Link to='/shop/kids'>Kids</Link>
+                    <Link to='/deals'>Deals</Link>
                 </div>
             </li>
             <li style={{textAlign: 'right'}}>

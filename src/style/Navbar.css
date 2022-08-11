@@ -16,7 +16,7 @@
 .nav li div{
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 80%;
     margin: auto;
 }
 
