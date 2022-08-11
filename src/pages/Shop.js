@@ -99,7 +99,7 @@ function Shop() {
 
                 <br />
 
-                <Btn bg={'black'} color='white' circlebg={'#ce9097'} circlec='black' />
+                <Link to={{pathname: '/product', search: '0'}}><Btn bg={'black'} color='white' circlebg={'#ce9097'} circlec='black' /></Link>
                 <br />
             </div>
 
