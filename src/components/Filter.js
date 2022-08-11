@@ -10,7 +10,7 @@ function Filter({text, onClick, style}) {
   }
 
   return (
-    <div className='filter' onClick={click} style={count? {opacity:1} : {}}>{text}</div>
+    <div className='filter' onClick={click} style={count? {opacity: 1} : style? style : {}}>{text}</div>
   )
 }
 

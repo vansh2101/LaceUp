@@ -33,3 +33,12 @@
 .card .btn:hover{
     scale: 1;
 }
+
+.card .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 3%;
+}

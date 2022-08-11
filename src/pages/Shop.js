@@ -108,7 +108,7 @@ function Shop() {
 
         <div className='flexbox'>
             {items.map((item) =>
-                  <Card key={item.id} id={item.id} name={item.name} img={item.img} price={item.price} />
+                  <Card key={item.id} id={item.id} name={item.name} img={item.img} price={item.price} size={item.size} />
               )}
         </div>
     </main>

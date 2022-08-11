@@ -7,7 +7,7 @@
         "category": "men",
         "color": "white",
         "brand": "adidas",
-        "size": [6,7,8,9]
+        "size": [6,7,8]
     },
     {
         "id": "1",
@@ -17,7 +17,7 @@
         "category": "women",
         "color": "yellow",
         "brand": "nike",
-        "size": [5,6,7,8]
+        "size": [5,6,7]
     },
     {
         "id": "2",
