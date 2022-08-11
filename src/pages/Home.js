@@ -27,7 +27,7 @@ function Home() {
 
             <h2>${shoes[0].price}</h2>
 
-            <Link to='/product'><Btn /></Link>
+            <Link to={{pathname:'/product', search: shoes[0].id}}><Btn /></Link>
         </div>
 
         <div className='center'>
