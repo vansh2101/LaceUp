@@ -10,7 +10,7 @@ import Navbar from '../components/Navbar';
 import Showcase from '../components/Showcase';
 import Btn from '../components/Btn';
 
-//todo: change the colors of the circles in the products class
+
 //todo: add selling partners and footer
 
 function Home() {
@@ -84,6 +84,18 @@ function Home() {
 
           <h3>Nike AirMax Pro</h3>
           <h2>$80.99</h2>
+        </div>
+      </div>
+
+      <div className='partners'>
+        <h1>Our Partners</h1>
+
+        <div>
+          <img src='/images/nike.png' />
+          <img src='/images/adidas.png' />
+          <img src='/images/puma.png' />
+          <img src='/images/vans.png' />
+          <img src='/images/reebok.png' />
         </div>
       </div>
     </>

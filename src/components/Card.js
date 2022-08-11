@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import Btn from './Btn';
 import Filter from './Filter';
 
-//todo: add men, women, kid label
+
 function Card({id, name, price, img, size}) {
   return (
     <div className='card'>
