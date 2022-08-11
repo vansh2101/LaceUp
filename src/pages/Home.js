@@ -10,8 +10,9 @@ import Navbar from '../components/Navbar';
 import Showcase from '../components/Showcase';
 import Btn from '../components/Btn';
 
+//? data
+import shoes from '../static/shoes.json';
 
-//todo: add selling partners and footer
 
 function Home() {
   return (
@@ -20,17 +21,17 @@ function Home() {
 
       <div className='split'>
         <div className='left'>
-            <h1>Nike AirMax Pro</h1>
+            <h1>{shoes[0].name}</h1>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pellentesque nisl. In sit amet fermentum arcu. Proin malesuada metus. </p>
 
-            <h2>$80.66</h2>
+            <h2>${shoes[0].price}</h2>
 
             <Link to='/product'><Btn /></Link>
         </div>
 
         <div className='center'>
-            <Showcase img={'./images/sneakers/sneaker.png'} />
+            <Showcase img={shoes[0].img} />
         </div>
 
         <div className='right'>
@@ -66,24 +67,24 @@ function Home() {
         <div className='bg'></div>
 
         <div>
-          <Showcase img={'/images/sneakers/sneaker2.png'} bg='yellow' scale='0.62' />
+          <Showcase img={shoes[1].img} bg='yellow' scale='0.62' />
 
-          <h3>Nike AirMax Pro</h3>
-          <h2>$80.99</h2>
+          <h3>{shoes[1].name}</h3>
+          <h2>${shoes[1].price}</h2>
         </div>
 
         <div>
-          <Showcase img={'/images/sneakers/sneaker8.png'} bg='orange' scale='0.62' />
+          <Showcase img={shoes[2].img} bg='orange' scale='0.62' />
 
-          <h3>Nike AirMax Pro</h3>
-          <h2>$80.99</h2>
+          <h3>{shoes[2].name}</h3>
+          <h2>${shoes[2].price}</h2>
         </div>
 
         <div>
-          <Showcase img={'/images/sneakers/sneaker5.png'} bg='gray' scale='0.62' />
+          <Showcase img={shoes[3].img} bg='brown' scale='0.62' />
 
-          <h3>Nike AirMax Pro</h3>
-          <h2>$80.99</h2>
+          <h3>{shoes[3].name}</h3>
+          <h2>${shoes[3].price}</h2>
         </div>
       </div>
 
