@@ -24,6 +24,35 @@ input,button{
 }
 
 
+#snackbar{
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  margin: auto;
+  width: 30vw;
+  background-color: #8dc53e;
+  padding: 15px;
+  text-align: center;
+  z-index: 1;
+  font-size: 1.35vw;
+  color: #060002;
+}
+#snackbar.visible{
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein {
+  from{bottom: 0%; opacity: 0;}
+  to {bottom: 5%; opacity: 1;}
+}
+@keyframes fadeout {
+  from {bottom: 5%; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }

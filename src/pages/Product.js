@@ -34,12 +34,18 @@ function Product() {
       localStorage.setItem('cart', JSON.stringify(data))
     }
 
-    alert('Item Added to Cart')
+    const ele = document.getElementById('snackbar')
+    ele.className = 'visible'
+    setTimeout(function(){
+      ele.className = ele.className.replace('visible', '')
+  }, 2900)
   }
 
   return (
     <>
     <Navbar />
+
+    <div id='snackbar'>Item Added to Cart</div>
 
     <div className='container'>
         <div className='left'>
