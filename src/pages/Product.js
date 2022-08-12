@@ -16,22 +16,26 @@ function Product() {
   const shoe = shoes[id]
 
   const [size, setSize] = useState()
+  const [msg, setMsg] = useState()
 
   const add_to_cart = (id) => {
-    if(!size){return}
-
     const data = JSON.parse(localStorage.getItem('cart'))
 
-    if (!data || data.filter((item) => item.id==id && item.size_added==size).length == 0){
+    if(!size){
+      setMsg('Select a shoe size')
+    }
+    else if (!data || data.filter((item) => item.id==id && item.size_added==size).length == 0){
       const arr = data? data:[]
       const new_data = {'size_added': size, 'count': 1, ...shoes[id]}
       arr.push(new_data)
       localStorage.setItem('cart', JSON.stringify(arr))
+      setMsg('Item Added to cart')
     }
     else{
       const index = data.findIndex(item => item.id == id && item.size_added == size)
       data[index]['count'] += 1
       localStorage.setItem('cart', JSON.stringify(data))
+      setMsg('Item Added to cart')
     }
 
     const ele = document.getElementById('snackbar')
@@ -45,7 +49,7 @@ function Product() {
     <>
     <Navbar />
 
-    <div id='snackbar'>Item Added to Cart</div>
+    <div id='snackbar'>{msg}</div>
 
     <div className='container'>
         <div className='left'>

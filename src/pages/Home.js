@@ -40,7 +40,7 @@ function Home() {
               <GiRunningShoe className='icon' />
               <div>
                 <h3>COMFORTABLE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur </p>
+                <p>With a modernized shape and on-point details, BOOST puts that spring in your step with soft comfort. </p>
               </div>
             </li>
 
@@ -48,7 +48,7 @@ function Home() {
               <GiDuration className='icon' />
               <div>
                 <h3>DURABLE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur </p>
+                <p>With a modernized shape and on-point details, Stitched suede is crisp yet casual</p>
               </div>
             </li>
 
@@ -56,7 +56,7 @@ function Home() {
               <GiConverseShoe className='icon' />
               <div>
                 <h3>FLEXIBLE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur </p>
+                <p>With a modernized shape and on-point details, this classic adidas shoe makes everything from errands to your work outfit that much better.</p>
               </div>
             </li>
           </ul>
