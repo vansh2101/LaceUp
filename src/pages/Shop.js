@@ -94,8 +94,8 @@ function Shop() {
     <main>
         <div className='banner'>
             <div>
-                <h1>Nike AirMax Pro</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pellentesque nisl. In sit amet fermentum arcu. Proin malesuada metus.</p>
+                <h1>{shoes[0].name}</h1>
+                <p>{shoes[0].desc}</p>
 
                 <br />
 
@@ -103,7 +103,7 @@ function Shop() {
                 <br />
             </div>
 
-            <img src='/images/sneakers/sneaker.png' />
+            <img src={shoes[0].img} />
         </div>
 
         <div className='flexbox'>
