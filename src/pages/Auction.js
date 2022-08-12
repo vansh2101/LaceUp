@@ -14,15 +14,15 @@ function Auction() {
 
     <div className='container auction'>
         <div className='left'>
-            <Showcase img={'/images/sneakers/sneaker10.png'} />
+            <Showcase img={'/images/sneakers/sneaker12.png'} />
         </div>
 
         <div className='right'>
             <h4>LIMITED EDITION</h4>
-            <h1>Nike AirMax Pro</h1>
-            <h4 style={{marginTop: '-25px', marginBottom: 25}}>BY NIKE</h4>
+            <h1>Puma AirMax Pro</h1>
+            <h4 style={{marginTop: '-25px', marginBottom: 25}}>BY PUMA</h4>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pellentesque nisl. In sit amet fermentum arcu. Proin malesuada metus.</p>
+            <p>Sometimes fashion just looks fast. These sci-fi-inspired trainers are bold and colourful because their nostalgic, retro design notes optimistically point to better days ahead. Stride into tomorrow with the RS-Fast Trainers’ unprecedented bold branding and highly visible graphics.</p>
 
             <div className='time'>
                 <div className='box'>2</div>
