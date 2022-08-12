@@ -16,7 +16,7 @@ function Shop() {
 
   const [items, setItems] = useState([])
   const [size, setSize] = useState({5: false, 6: false, 7: false, 8: false, 9: false, 10: false})
-  const [color, setColor] = useState({'red': false, 'blue': false, 'white': false, 'gray': false, 'green': false, 'yellow': false, 'brown': false})
+  const [color, setColor] = useState({'red': false, 'blue': false, 'white': false, 'gray': false, 'green': false, 'yellow': false, 'pink': false})
   const [brand, setBrand] = useState({'nike': false, 'puma': false, 'adidas': false, 'vans': false, 'reebok': false})
 
   const update = (filter, val) => {

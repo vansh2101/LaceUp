@@ -23,7 +23,7 @@ function Home() {
         <div className='left'>
             <h1>{shoes[0].name}</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pellentesque nisl. In sit amet fermentum arcu. Proin malesuada metus. </p>
+            <p>{shoes[0].desc}</p>
 
             <h2>${shoes[0].price}</h2>
 

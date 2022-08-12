@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Product from './pages/Product';
 import Auction from './pages/Auction';
+import Cart from './pages/Cart';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path='/shop/:slug' element={<Shop />} />
         <Route path='/product' element={<Product />}/>
         <Route path='/deals' element={<Auction />}/>
+        <Route path='/cart' element={<Cart />}/>
       </Routes>
     </BrowserRouter>
     

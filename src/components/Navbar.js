@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/Navbar.css';
 import {Link} from 'react-router-dom';
+import {RiShoppingBagFill} from 'react-icons/ri'
 
 //? icons
 import {FaSearch} from 'react-icons/fa';
@@ -21,6 +22,9 @@ function Navbar() {
             <li style={{textAlign: 'right'}}>
               <input type='text' placeholder='Search...' />
               <FaSearch color='black' className='icon' />
+            </li>
+            <li style={{textAlign: 'right', width: 'fit-content'}}>
+              <Link to='/cart'><RiShoppingBagFill color='#8dc53e' className='cart-icon' /></Link>
             </li>
         </ul>
     </>

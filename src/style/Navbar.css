@@ -46,7 +46,7 @@
 .nav input{
     width: 55%;
     padding: 12px;
-    padding-left: 32px;
+    padding-left: 35px;
     color: black;
     border-radius: 20px;
     font-size: 0.9vw;
@@ -55,6 +55,11 @@
 .nav .icon{
     position: absolute;
     top: 11px;
-    left: 38%;
+    left: 37%;
     font-size: 1.3vw;
+}
+
+.nav .cart-icon{
+    font-size: 2vw;
+    margin-left: 20px;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../style/Product.css';
 
 //? Components
@@ -12,8 +12,30 @@ import shoes from '../static/shoes.json';
 
 
 function Product() {
-  const id = window.location.search
-  const shoe = shoes[id.replace("?", '')]
+  const id = window.location.search.replace("?", '')
+  const shoe = shoes[id]
+
+  const [size, setSize] = useState()
+
+  const add_to_cart = (id) => {
+    if(!size){return}
+
+    const data = JSON.parse(localStorage.getItem('cart'))
+
+    if (!data || data.filter((item) => item.id==id && item.size==size).length == 0){
+      const arr = data? data:[]
+      const new_data = {'id': id, 'size': size, 'count': 1}
+      arr.push(new_data)
+      localStorage.setItem('cart', JSON.stringify(arr))
+    }
+    else{
+      const index = data.findIndex(item => item.id == id && item.size == size)
+      data[index]['count'] += 1
+      localStorage.setItem('cart', JSON.stringify(data))
+    }
+
+    alert('Item Added to Cart')
+  }
 
   return (
     <>
@@ -27,18 +49,18 @@ function Product() {
         <div className='right'>
             <h1>{shoe.name}</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pellentesque nisl. In sit amet fermentum arcu. Proin malesuada metus.</p>
+            <p>{shoe.desc}</p>
 
             <h3>Size Available:-</h3>
             <div className='flex'>
               {shoe.size.map(item => 
-                <Filter text={`${item} UK`} style={{opacity:1}} />
+                <Filter key={item} text={`${item} UK`} style={item===size? {opacity: 1} : {}} onClick={() => setSize(item)} filter={false} />
                 )}
             </div>
 
             <h2>${shoe.price}</h2>
 
-            <Btn />
+            <Btn text='Add to Cart' btn='+' onClick={() => add_to_cart(shoe.id)} />
         </div>
     </div>
     </>

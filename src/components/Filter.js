@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../style/Filter.css';
 
-function Filter({text, onClick, style}) {
+function Filter({text, onClick, style, filter=true}) {
   const [count, setCount] = useState(false)
 
   const click = () => {
@@ -10,7 +10,7 @@ function Filter({text, onClick, style}) {
   }
 
   return (
-    <div className='filter' onClick={click} style={count? {opacity: 1} : style? style : {}}>{text}</div>
+    <div className='filter' onClick={click} style={filter && count? {opacity: 1} : style? style : {}}>{text}</div>
   )
 }
 

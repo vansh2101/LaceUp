@@ -31,7 +31,7 @@ function Sidebar({func}) {
         <Filter text='White' onClick={() => func('color', 'white')} />
         <Filter text='Gray' onClick={() => func('color', 'gray')} />
         <Filter text='Yellow' onClick={() => func('color', 'yellow')} />
-        <Filter text='Brown' onClick={() => func('color', 'brown')} />
+        <Filter text='Pink' onClick={() => func('color', 'pink')} />
       </div>
 
       <br />
