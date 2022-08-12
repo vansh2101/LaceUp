@@ -1,0 +1,123 @@
+.cart-split{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.cart-left{
+    width: 75%;
+    height: 85vh;
+    overflow-y: auto;
+}
+.cart-left h1{
+    margin: 0;
+    color: #ce9097;
+    font-size: 1.9vw;
+}
+.cart-left hr{
+    width: 90%;
+    margin-left: 0;
+    border: 0.1px solid #ce9097;
+}
+
+.cart-left table{
+    width: 95%;
+    text-align: left;
+    margin-top: -1%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+.cart-left th{
+    font-variant: small-caps;
+    opacity: 0.7;
+}
+.cart-left td{
+    font-size: 1.3vw;
+}
+
+.cart-left .details{
+    display: flex;
+    align-items: center;
+}
+.cart-left img{
+    width: 30%;
+}
+.cart-left .details div{
+    margin-left: 20px;
+    width: 60%;
+}
+.cart-left .details h2{
+    font-size: 1.4vw;
+    margin: 0;
+}
+.cart-left .details h4{
+    font-size: 1vw;
+    margin: 0;
+    margin-bottom: 5%;
+    opacity: 0.5;
+}
+.cart-left .details .filter{
+    margin-left: 0;
+    width: fit-content;
+    font-size: 1.05vw;
+}
+
+.cart-left .details button{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #8dc53e;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cart-left .details input{
+    width: 25px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1.2vw;
+}
+
+.cart-right{
+    width: 21%;
+    background-color: #8dc53e;
+    height: 81.5vh;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: -1%;
+    overflow-y: auto;
+}
+
+.cart-right h1{
+    margin: 0;
+    color: black;
+    font-size: 1.6vw;
+    opacity: 0.8;
+}
+.cart-right hr{
+    margin-left: 0;
+    border: 0.1px solid black;
+}
+
+.cart-right table{
+    width: 90%;
+    text-align: left;
+    margin-top: 4%;
+    color: black;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.cart-right table hr{
+    border: 1px dashed black;
+    width: 105%;
+}
+
+.cart-right .btn{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}

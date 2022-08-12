@@ -22,14 +22,14 @@ function Product() {
 
     const data = JSON.parse(localStorage.getItem('cart'))
 
-    if (!data || data.filter((item) => item.id==id && item.size==size).length == 0){
+    if (!data || data.filter((item) => item.id==id && item.size_added==size).length == 0){
       const arr = data? data:[]
-      const new_data = {'id': id, 'size': size, 'count': 1}
+      const new_data = {'size_added': size, 'count': 1, ...shoes[id]}
       arr.push(new_data)
       localStorage.setItem('cart', JSON.stringify(arr))
     }
     else{
-      const index = data.findIndex(item => item.id == id && item.size == size)
+      const index = data.findIndex(item => item.id == id && item.size_added == size)
       data[index]['count'] += 1
       localStorage.setItem('cart', JSON.stringify(data))
     }
